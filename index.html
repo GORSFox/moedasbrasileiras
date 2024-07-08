@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas Brasileiras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Moedas Brasileiras</h1>
+        <form id="currency-form">
+            <label for="currency">Moeda de Origem:</label>
+            <select id="currency" name="currency">
+                <option value="cruzado">Cruzado (Cr$)</option>
+                <option value="cruzado_novo">Cruzado Novo (NCz$)</option>
+                <option value="cruzeiro">Cruzeiro (Cr$)</option>
+                <option value="cruzeiro_real">Cruzeiro Real (CR$)</option>
+                <option value="real">Real (R$)</option>
+            </select>
+
+            <label for="amount">Valor:</label>
+            <input type="number" id="amount" name="amount" placeholder="Digite o valor" required>
+
+            <button type="submit">Converter</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
